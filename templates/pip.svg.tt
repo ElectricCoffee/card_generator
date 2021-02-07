@@ -1,8 +1,13 @@
+[% SET width  = 14 %]
+[% SET height = 14 %]
+[% SET xoffset = width / 2 %]
+[% SET yoffset = height / 2 %]
+
 <use xlink:href="#bell" 
-     width="10" height="10" 
+     width="[% width %]" height="[% height %]" 
      x="[% x %]" y="[% y %]" 
      [% UNLESS flip %]
-     transform="translate(-5 -5)" 
+     transform="translate(-[% xoffset %] -[% yoffset %])" 
      [% ELSE %]
-     transform="translate(68.5 93.9) rotate(180)"
+     transform="translate([% 63.5 + xoffset %] [% 88.9 + yoffset %]) rotate(180)"
      [% END %]/>
