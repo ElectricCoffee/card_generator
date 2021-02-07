@@ -3,7 +3,7 @@
 [% SET xoffset = width / 2 %]
 [% SET yoffset = height / 2 %]
 
-<use xlink:href="#bell" 
+<use xlink:href="#pip" 
      width="[% width %]" height="[% height %]" 
      x="[% x %]" y="[% y %]" 
      [% UNLESS flip %]

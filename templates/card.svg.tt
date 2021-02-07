@@ -28,7 +28,7 @@
         <text x="2" y="10" font-size="10" text-anchor="left">
             [% index %]
         </text>
-        <use xlink:href="#bell" 
+        <use xlink:href="#pip" 
              width="7" height="7" 
              x="1.5" y="12" />
     </g>
@@ -71,5 +71,7 @@
         [% END %]
     </g>
     <!-- A clone of the pip and its number in the opposite corner -->
-    <use xlink:href="#pip-rank" x="-63.5" y="-88.9" transform="rotate(180)"/>
+    <use xlink:href="#pip-rank" 
+         x="-63.5" y="-88.9" 
+         transform="rotate(180)"/>
 </svg>
