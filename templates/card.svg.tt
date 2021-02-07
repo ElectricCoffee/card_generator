@@ -1,64 +1,95 @@
 <svg version="1.1" baseProfile="full" 
-     width="63.5mm" height="88.9mm" 
+     width="63.5mm" height="88.9mm"
+     viewBox="0 0 63.5 88.9"
      xmlns="http://www.w3.org/2000/svg"
      xmlns:xlink="http://www.w3.org/1999/xlink">
     <defs id="defs2">
      <style type="text/css">
-      .red-suit {
-          fill: sienna;
-      }
+        text { 
+            font-family: monospace; 
+            font-weight: bolder;
+        }
+
+        .red-suit {
+            fill: sienna;
+            stroke: white;
+            stroke-width: 1;
+         }
      </style>
+      <symbol 
+         width="37.437325" 
+         height="43.375137" 
+         viewBox="0 0 37.437325 43.375137" 
+         id="bell">
+         <circle class="red-suit"
+            id="hammer"
+            cx="18.718662"
+            cy="35.256096"
+            r="6" />
+         <rect class="red-suit"
+            id="loop"
+            width="7.8480897"
+            height="11.996511"
+            x="14.794621"
+            y="1"
+            ry="2.2360439" />
+         <path class="red-suit"
+            d="m 18.718324,9.108484 c -6.519101,0 -9.039825,2.846795 -11.766687,13.456993 -4.531581,3.297507 -5.840254,9.152489 -5.928984,15.528739 6.106965,-3.01824 12.785366,-4.09901 17.695671,-4.17502 4.91031,0.076 11.589383,1.15678 17.696355,4.17502 -0.0887,-6.37625 -1.397406,-12.231232 -5.928988,-15.528739 C 27.758829,11.955279 25.237429,9.108484 18.718324,9.108484 Z"
+            id="body" />
+         </symbol>
    </defs>
     <!-- Background -->
-    <rect width="62.5mm" height="87.9mm" 
-          x="0.5mm" y="0.5mm" rx="4mm"
+    <rect width="62.5" height="87.9" 
+          x="0.5" y="0.5" rx="4"
           fill="white" 
-          stroke="black" stroke-width="1mm"/>
+          stroke="black" stroke-width="1"/>
     <!-- The pip and its number -->
-    <g id="pip-letter">
-        <text x="3mm" y="6.8mm" font-size="24" text-anchor="left">
+    <g id="pip-rank">
+        <text x="2" y="10" font-size="10" text-anchor="left">
             [% index %]
         </text>
-        <circle cx="5mm" cy="10mm" r="2.5mm" class="red-suit" />
+        <use xlink:href="#bell" 
+             width="7" height="7" 
+             x="1.5" y="12" />
     </g>
-    <g id="center-pips">
+    <g id="pips">
         [% IF index == 4 || index == 5 || index == 6 %]
-        <!-- Top Left -->
-        <circle cx="25%" cy="25%" r="5mm" class="red-suit" />
+            <!-- Top Left -->
+            [% INCLUDE pip.svg.tt x = '25%' y = '25%' %]
         [% END %]
         [% IF index == 2 || index == 3 %]
-        <!-- Top Middle -->
-        <circle cx="50%" cy="25%" r="5mm" class="red-suit" />
+            <!-- Top Middle -->
+            [% INCLUDE pip.svg.tt x = '50%' y = '25%' %]
         [% END %]
         [% IF index == 4 || index == 5 || index == 6 %]
-        <!-- Top Right -->
-        <circle cx="75%" cy="25%" r="5mm" class="red-suit" />
+            <!-- Top Right -->
+            [% INCLUDE pip.svg.tt x = '75%' y = '25%' %]
         [% END %]
         [% IF index == 6 %]
-        <!-- Middle Left -->
-        <circle cx="25%" cy="50%" r="5mm" class="red-suit" />
+            <!-- Middle Left -->
+            [% INCLUDE pip.svg.tt x = '25%' y = '50%' %]
         [% END %]
         [% IF index == 1 || index == 3 || index == 5 %]
-        <!-- Middle -->
-        <circle cx="50%" cy="50%" r="5mm" class="red-suit" />
+            <!-- Middle -->
+            [% INCLUDE pip.svg.tt x = '50%' y = '50%' %]
         [% END %]
         [% IF index == 6 %]
-        <!-- Middle Right -->
-        <circle cx="75%" cy="50%" r="5mm" class="red-suit" />
+            <!-- Middle Right -->
+            [% INCLUDE pip.svg.tt x = '75%' y = '50%' %]
         [% END %]
         [% IF index == 4 || index == 5 || index == 6 %]
-        <!-- Bottom Left -->
-        <circle cx="25%" cy="75%" r="5mm" class="red-suit" />
+            <!-- Bottom Left -->
+            [% INCLUDE pip.svg.tt x = '75%' y = '25%' flip = 1 %]
         [% END %]
         [% IF index == 2 || index == 3 %]
-        <!-- Bottom Middle -->
-        <circle cx="50%" cy="75%" r="5mm" class="red-suit" />
+            <!-- Bottom Middle -->
+            [% INCLUDE pip.svg.tt x = '50%' y = '25%' flip = 1 %]
         [% END %]
         [% IF index == 4 || index == 5 || index == 6 %]
-        <!-- Bottom Right -->
-        <circle cx="75%" cy="75%" r="5mm" class="red-suit" />
+            <!-- Bottom Right -->
+            [% INCLUDE pip.svg.tt x = '25%' y = '25%' flip = 1 %]
         [% END %]
     </g>
     <!-- A clone of the pip and its number in the opposite corner -->
-    <use xlink:href="#pip-letter" x="-63.5mm" y="-88.9mm" transform="rotate(180)"/>
+    <use xlink:href="#pip-rank" x="-63.5" y="-88.9" transform="rotate(180)"/>
 </svg>

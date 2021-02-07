@@ -27,7 +27,7 @@ my $tt = Template->new(
 say 'Generating SVGs...' unless $run_silent;
 for (1 .. 6) {
     $tt->process(
-        'test2.svg.tt', 
+        'card.svg.tt', 
         { index => $_, resources => cwd . '/resources'}, 
         "card-$_.svg",
         { binmode => ':raw' }

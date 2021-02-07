@@ -1,0 +1,8 @@
+<use xlink:href="#bell" 
+     width="10" height="10" 
+     x="[% x %]" y="[% y %]" 
+     [% UNLESS flip %]
+     transform="translate(-5 -5)" 
+     [% ELSE %]
+     transform="translate(68.5 93.9) rotate(180)"
+     [% END %]/>
