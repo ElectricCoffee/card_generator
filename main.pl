@@ -33,6 +33,7 @@ for (1 .. 6) {
         { binmode => ':raw' }
     );
 }
+say 'SVGs done.' unless $run_silent;
 
 chdir './out';
 
@@ -41,3 +42,4 @@ for (<*.svg>) {
     system "rsvg-convert.exe -f png -o $_.png $_";
     unlink $_ unless $keep_svg;
 }
+say 'PNGs done.' unless $run_silent;
