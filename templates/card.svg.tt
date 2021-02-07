@@ -11,7 +11,7 @@
             }
 
             .red-suit {
-                fill: sienna;
+                fill: indianred;
                 stroke: white;
                 stroke-width: 1;
             }
