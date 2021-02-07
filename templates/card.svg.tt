@@ -1,0 +1,64 @@
+<svg version="1.1" baseProfile="full" 
+     width="63.5mm" height="88.9mm" 
+     xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs id="defs2">
+     <style type="text/css">
+      .red-suit {
+          fill: sienna;
+      }
+     </style>
+   </defs>
+    <!-- Background -->
+    <rect width="62.5mm" height="87.9mm" 
+          x="0.5mm" y="0.5mm" rx="4mm"
+          fill="white" 
+          stroke="black" stroke-width="1mm"/>
+    <!-- The pip and its number -->
+    <g id="pip-letter">
+        <text x="3mm" y="6.8mm" font-size="24" text-anchor="left">
+            [% index %]
+        </text>
+        <circle cx="5mm" cy="10mm" r="2.5mm" class="red-suit" />
+    </g>
+    <g id="center-pips">
+        [% IF index == 4 || index == 5 || index == 6 %]
+        <!-- Top Left -->
+        <circle cx="25%" cy="25%" r="5mm" class="red-suit" />
+        [% END %]
+        [% IF index == 2 || index == 3 %]
+        <!-- Top Middle -->
+        <circle cx="50%" cy="25%" r="5mm" class="red-suit" />
+        [% END %]
+        [% IF index == 4 || index == 5 || index == 6 %]
+        <!-- Top Right -->
+        <circle cx="75%" cy="25%" r="5mm" class="red-suit" />
+        [% END %]
+        [% IF index == 6 %]
+        <!-- Middle Left -->
+        <circle cx="25%" cy="50%" r="5mm" class="red-suit" />
+        [% END %]
+        [% IF index == 1 || index == 3 || index == 5 %]
+        <!-- Middle -->
+        <circle cx="50%" cy="50%" r="5mm" class="red-suit" />
+        [% END %]
+        [% IF index == 6 %]
+        <!-- Middle Right -->
+        <circle cx="75%" cy="50%" r="5mm" class="red-suit" />
+        [% END %]
+        [% IF index == 4 || index == 5 || index == 6 %]
+        <!-- Bottom Left -->
+        <circle cx="25%" cy="75%" r="5mm" class="red-suit" />
+        [% END %]
+        [% IF index == 2 || index == 3 %]
+        <!-- Bottom Middle -->
+        <circle cx="50%" cy="75%" r="5mm" class="red-suit" />
+        [% END %]
+        [% IF index == 4 || index == 5 || index == 6 %]
+        <!-- Bottom Right -->
+        <circle cx="75%" cy="75%" r="5mm" class="red-suit" />
+        [% END %]
+    </g>
+    <!-- A clone of the pip and its number in the opposite corner -->
+    <use xlink:href="#pip-letter" x="-63.5mm" y="-88.9mm" transform="rotate(180)"/>
+</svg>

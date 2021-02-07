@@ -1,0 +1,22 @@
+text { 
+    font-family: monospace; 
+    font-weight: bolder;
+}
+
+.red-suit {
+    fill: sienna;
+    stroke: white;
+    stroke-width: 1;
+ }
+
+ .blue-suit {
+    fill: cornflowerblue;
+    stroke: white;
+    stroke-width: 1;
+ }
+
+ .yellow-suit {
+    fill: gold;
+    stroke: white;
+    stroke-width: 1;
+ }
