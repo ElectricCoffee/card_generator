@@ -24,18 +24,23 @@ my $tt = Template->new(
     OUTPUT_PATH  => './out',
 );
 
+#my @suits = qw(coin quill sword bell star flag);
+my @suits = qw(bell);
+
 say 'Generating SVGs...' unless $run_silent;
-for (1 .. 6) {
-    $tt->process(
-        'card.svg.tt', 
-        { 
-            index => $_, 
-            resources => cwd . '/resources', 
-            pip => 'bell.svg.tt',
-        }, 
-        "card-$_.svg",
-        { binmode => ':raw' }
-    );
+for my $suit (@suits) {
+    for my $rank (1 .. 6) {
+        $tt->process(
+            'card.svg.tt', 
+            { 
+                index => $rank, 
+                resources => cwd . '/resources', 
+                pip => "$suit.svg.tt",
+            }, 
+            "card-$suit-$rank.svg",
+            { binmode => ':raw' }
+        );
+    }
 }
 say 'SVGs done.' unless $run_silent;
 
