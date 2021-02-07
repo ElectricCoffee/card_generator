@@ -6,12 +6,12 @@
     <defs id="defs2">
      <style type="text/css">
         text { 
-            font-family: monospace; 
+            font-family: 'Courier New', Courier, monospace; 
             font-weight: bolder;
         }
 
         .red-suit {
-            fill: sienna;
+            fill: indianred;
             stroke: white;
             stroke-width: 1;
          }
@@ -54,50 +54,50 @@
     </g>
     <g id="pips">
     <!-- Center pip -->
-        <use xlink:href="bell2.svg#bell" 
-             width="10" height="10" 
+        <use xlink:href="#bell" 
+             width="14" height="14" 
              x="25%" y="25%" 
-             transform="translate(-5 -5)"/>
+             transform="translate(-7 -7)"/>
              
          <use xlink:href="#bell" 
-             width="10" height="10" 
+             width="14" height="14" 
              x="50%" y="25%" 
-             transform="translate(-5 -5)"/>
+             transform="translate(-7 -7)"/>
 
          <use xlink:href="#bell" 
-             height="10" width="10"
+             height="14" width="14"
              x="75%" y="25%" 
-             transform="translate(-5 -5)"/>
+             transform="translate(-7 -7)"/>
 
          <use xlink:href="#bell" 
-             width="10" height="10" 
+             width="14" height="14" 
              x="25%" y="50%" 
-             transform="translate(-5 -5)"/>
+             transform="translate(-7 -7)"/>
 
          <use xlink:href="#bell" 
-             width="10" height="10" 
+             width="14" height="14" 
              x="50%" y="50%" 
-             transform="translate(-5 -5)"/>
+             transform="translate(-7 -7)"/>
 
          <use xlink:href="#bell" 
-             width="10" height="10" 
+             width="14" height="14" 
              x="75%" y="50%" 
-             transform="translate(-5 -5)"/>
+             transform="translate(-7 -7)"/>
 
          <use xlink:href="#bell" 
-             width="10" height="10" 
+             width="14" height="14" 
              x="75%" y="25%" 
-             transform="translate(68.5 93.9) rotate(180)"/>
+             transform="translate(70.5 95.9) rotate(180)"/>
 
          <use xlink:href="#bell" 
-             width="10" height="10" 
+             width="14" height="14" 
              x="50%" y="25%"
-             transform="translate(68.5 93.9) rotate(180)"/>
+             transform="translate(70.5 95.9) rotate(180)"/>
 
          <use xlink:href="#bell" 
-             width="10" height="10" 
+             width="14" height="14" 
              x="25%" y="25%" 
-             transform="translate(68.5 93.9) rotate(180)"/>
+             transform="translate(70.5 95.9) rotate(180)"/>
     </g>
     <!-- A clone of the pip and its number in the opposite corner -->
     <use xlink:href="#pip-rank" x="-63.5" y="-88.9" transform="rotate(180)"/>
