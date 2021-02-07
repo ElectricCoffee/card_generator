@@ -28,7 +28,11 @@ say 'Generating SVGs...' unless $run_silent;
 for (1 .. 6) {
     $tt->process(
         'card.svg.tt', 
-        { index => $_, resources => cwd . '/resources'}, 
+        { 
+            index => $_, 
+            resources => cwd . '/resources', 
+            pip => 'bell.svg.tt',
+        }, 
         "card-$_.svg",
         { binmode => ':raw' }
     );
