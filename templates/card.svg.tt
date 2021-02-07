@@ -4,11 +4,11 @@
      xmlns="http://www.w3.org/2000/svg"
      xmlns:xlink="http://www.w3.org/1999/xlink">
     <defs id="defs2">
-     <style type="text/css">
-        text { 
-            font-family: monospace; 
-            font-weight: bolder;
-        }
+        <style type="text/css">
+            text { 
+                font-family: Courier New, Courier, monospace; 
+                font-weight: bold;
+            }
 
         .red-suit {
             fill: sienna;
