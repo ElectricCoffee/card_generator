@@ -25,7 +25,7 @@ my $tt = Template->new(
 );
 
 #my @suits = qw(coin quill sword bell star flag);
-my @suits = qw(bell);
+my @suits = qw(coin bell star);
 
 say 'Generating SVGs...' unless $run_silent;
 for my $suit (@suits) {

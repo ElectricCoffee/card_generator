@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   version="1.1"
+   viewBox="0 0 63.5 88.9"
+   height="63.5mm"
+   width="88.9mm">
+  <defs>
+        <style type="text/css">
+         text { 
+            font-family: Courier New, Courier, monospace; 
+            font-weight: bold;
+         }
+
+         .red-suit {
+            fill: indianred;
+         }
+
+         .blue-suit {
+            fill: cornflowerblue;
+         }
+
+         .yellow-suit {
+            fill: gold;
+         }
+
+         .outline {
+            stroke: black;
+            stroke-width: 1;
+         }
+        </style>
+  </defs>
+  <symbol id="pip" 
+          viewBox="0 0 24 24" 
+          height="12mm" width="12mm">
+   <polygon 
+      class="blue-suit outline"
+      points="9,9 12,1 15,9 23,12 15,15 12,23 9,15 1,12 "/>
+  </symbol>
+  <use xlink:href="#pip" width="100%" height="100%"/>
+</svg>

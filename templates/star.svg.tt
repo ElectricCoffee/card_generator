@@ -1,0 +1,7 @@
+<symbol id="pip" 
+        viewBox="0 0 24 24" 
+        height="12mm" width="12mm">
+<polygon 
+    class="blue-suit outline"
+    points="9,9 12,1 15,9 23,12 15,15 12,23 9,15 1,12 "/>
+</symbol>

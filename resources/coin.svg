@@ -1,0 +1,29 @@
+<svg
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   version="1.1"
+   viewBox="0 0 63.5 88.9"
+   height="63.5mm"
+   width="88.9mm"
+   id="idk">
+   <defs>
+      <style type="text/css">
+         .yellow-suit {
+            fill: gold;
+         }
+
+         .outline {
+            stroke: black;
+            stroke-width: 1;
+         }
+      </style>
+      <symbol width="12mm" height="12mm" viewBox="0 0 24 24" id="bell">
+         <circle cx="12" cy="12" r="11" class="yellow-suit outline"/>
+         <rect height="5" width="5" 
+               x="50%" y="50%" 
+               rx="0.1" 
+               transform="translate(-2.5, -2.5)" class="outline" fill="white"/>
+      </symbol>
+   </defs>
+   <use xlink:href="#bell" width="100%" height="100%"/>
+</svg>

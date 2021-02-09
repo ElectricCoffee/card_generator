@@ -1,0 +1,9 @@
+<symbol width="24mm" height="24mm" viewBox="0 0 24 24" id="pip">
+    <circle cx="12" cy="12" r="11" 
+            class="yellow-suit outline"/>
+    <rect height="5" width="5" 
+        x="50%" y="50%" 
+        rx="0.1" 
+        transform="translate(-2.5, -2.5)" fill="white" 
+        class="outline" />
+</symbol>
