@@ -4,18 +4,7 @@
      xmlns="http://www.w3.org/2000/svg"
      xmlns:xlink="http://www.w3.org/1999/xlink">
     <defs id="defs2">
-        <style type="text/css">
-            text { 
-                font-family: Courier New, Courier, monospace; 
-                font-weight: bold;
-            }
-
-            .red-suit {
-                fill: indianred;
-                stroke: white;
-                stroke-width: 1;
-            }
-        </style>
+        [% INCLUDE style.svg.tt %]
         [% INCLUDE $pip %]
    </defs>
     <!-- Background -->
@@ -28,7 +17,7 @@
         <text x="2" y="10" font-size="10" text-anchor="left">
             [% index %]
         </text>
-        <use xlink:href="#pip" 
+        <use xlink:href="#pip"
              width="7" height="7" 
              x="1.5" y="12" />
     </g>

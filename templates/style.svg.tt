@@ -1,0 +1,23 @@
+<style type="text/css">
+    text { 
+        font-family: Courier New, Courier, monospace; 
+        font-weight: bold;
+    }
+
+    .red-suit {
+        fill: indianred;
+    }
+
+    .blue-suit {
+        fill: cornflowerblue;
+    }
+
+    .yellow-suit {
+        fill: gold;
+    }
+
+    .outline {
+        stroke: black;
+        stroke-width: 1;
+    }
+</style>
