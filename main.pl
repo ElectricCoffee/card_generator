@@ -48,7 +48,7 @@ chdir './out';
 
 say 'Generating PNGs...' unless $run_silent;
 for (<*.svg>) {
-    system "rsvg-convert.exe -f png -o $_.png $_";
+    system "rsvg-convert.exe -f png -o $_.png $_ --dpi-x=300 --dpi-y=300";
     unlink $_ unless $keep_svg;
 }
 say 'PNGs done.' unless $run_silent;
